@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: c5ab53f1aba4f405b838d610445575ff
+guid: 57c38e1609d50490e946ac9bad10eff4
 AssetOrigin:
   serializedVersion: 1
   productId: 114685
   packageName: Tiny RPG - Forest
   packageVersion: 1.0
-  assetPath: Assets/Tiny RPG Forest/Artwork/sprites/mole/idle/mole-idle-back.png
+  assetPath: Assets/Tiny RPG Forest/Artwork/sprites/mole/walk/mole-walk-side/mole-walk-side-1.png
   uploadId: 236522
 TextureImporter:
   internalIDToNameTable: []

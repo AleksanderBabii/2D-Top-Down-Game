@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-guid: c5ab53f1aba4f405b838d610445575ff
-AssetOrigin:
-  serializedVersion: 1
-  productId: 114685
-  packageName: Tiny RPG - Forest
-  packageVersion: 1.0
-  assetPath: Assets/Tiny RPG Forest/Artwork/sprites/mole/idle/mole-idle-back.png
-  uploadId: 236522
+guid: 525df486af843094ab145509819612d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
