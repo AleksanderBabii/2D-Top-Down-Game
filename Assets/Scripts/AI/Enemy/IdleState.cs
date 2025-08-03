@@ -10,7 +10,7 @@ public class IdleState : IEnemyState
     public void Update(Enemy enemy)
     {
         float distance = Vector2.Distance(enemy.transform.position, enemy.player.position);
-        if (distance < enemy.detectionRange)
+        if (enemy.CanSeePlayer())
         {
             enemy.ChangeState(new ChaseState());
         }

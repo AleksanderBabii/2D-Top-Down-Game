@@ -163,7 +163,7 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -200,5 +200,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   moveSpeed: 2
-  detectionRange: 5
   attackRange: 1
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  patrolWaitTime: 1
+  currentPatrolIndex: 0
+  patrolTimer: 0
+  detectionRadius: 5
+  fieldOfView: 180
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  canSeePlayer: 0

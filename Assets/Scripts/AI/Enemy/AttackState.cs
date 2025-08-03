@@ -22,12 +22,16 @@ public class AttackState : IEnemyState
             enemy.ChangeState(new ChaseState());
             return;
         }
-
+        
+        //if condition passed, attack again 
         if (Time.time - lastAttackTime >= attackCooldown)
         {
             Debug.Log("Enemy attacks!");
             lastAttackTime = Time.time;
             // Deal damage to player
+            // Trigger attack logic
+            enemy.animator.SetTrigger("Attack");
+            PerformAttack(enemy);
         }
     }
 
@@ -35,10 +39,15 @@ public class AttackState : IEnemyState
 
     public void OnExit(Enemy enemy) { }
 
-    private void PerformAttack(Enemy enemy)
+    public void PerformAttack(Enemy enemy)
     {
-        // Logic to deal damage to the player
-        Debug.Log("Performing attack on player");
-        // Example: player.GetComponent<Player>().TakeDamage(enemy.attackDamage);
+        //Use animation events or direct logic here
+        Debug.Log("Enemy attacks player!");
+
+        //Example: Deal damage to player
+        if (Vector2.Distance(enemy.transform.position, enemy.player.position) < enemy.attackRange)
+        {
+           enemy.player.GetComponent<HealthSystem>()?.TakeDamage(1); // Optional script
+        }
     }
 }

@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetFloat("MoveY", 0);
                 animator.SetFloat("Speed", 1f);*/
 
-        Debug.Log($"X: {movement.x}, Y: {movement.y}, Speed: {movement.sqrMagnitude}5");
+        //Debug.Log($"X: {movement.x}, Y: {movement.y}, Speed: {movement.sqrMagnitude}5");
 
 
     }
